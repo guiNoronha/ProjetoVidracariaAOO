@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCriar = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblCadClie = new System.Windows.Forms.Label();
             this.txtNomeCli = new System.Windows.Forms.TextBox();
@@ -49,14 +48,17 @@
             this.lblNroCli = new System.Windows.Forms.Label();
             this.txtNroCli = new System.Windows.Forms.TextBox();
             this.txtEmailCli = new System.Windows.Forms.TextBox();
+            this.btnVoltar = new System.Windows.Forms.PictureBox();
+            this.btnListarCli = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.btnListarCli);
             this.panel1.Controls.Add(this.btnCriar);
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -75,16 +77,7 @@
             this.btnCriar.TabIndex = 3;
             this.btnCriar.Text = "Criar";
             this.btnCriar.UseVisualStyleBackColor = true;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
-            this.btnVoltar.Location = new System.Drawing.Point(12, 15);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
-            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnVoltar.TabIndex = 2;
-            this.btnVoltar.TabStop = false;
+            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // panel2
             // 
@@ -252,6 +245,28 @@
             this.txtEmailCli.Size = new System.Drawing.Size(396, 26);
             this.txtEmailCli.TabIndex = 22;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
+            this.btnVoltar.Location = new System.Drawing.Point(12, 15);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
+            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnVoltar.TabIndex = 2;
+            this.btnVoltar.TabStop = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // btnListarCli
+            // 
+            this.btnListarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarCli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnListarCli.Location = new System.Drawing.Point(268, 12);
+            this.btnListarCli.Name = "btnListarCli";
+            this.btnListarCli.Size = new System.Drawing.Size(87, 36);
+            this.btnListarCli.TabIndex = 4;
+            this.btnListarCli.Text = "Listar";
+            this.btnListarCli.UseVisualStyleBackColor = true;
+            // 
             // Form_cadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,9 +295,9 @@
             this.Name = "Form_cadCliente";
             this.Text = "Form_cadCliente";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,5 +326,6 @@
         private System.Windows.Forms.TextBox txtNroCli;
         private System.Windows.Forms.TextBox txtEmailCli;
         private System.Windows.Forms.Button btnCriar;
+        private System.Windows.Forms.Button btnListarCli;
     }
 }

@@ -21,5 +21,27 @@ namespace ProjetoVidracariaAOO
         {
 
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_login form = new Form_login();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            Form_cadCliente form = new Form_cadCliente();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+        }
+
+        private void btnFornecedor_Click(object sender, EventArgs e)
+        {
+            Form_cadFornecedor form = new Form_cadFornecedor();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+        }
     }
 }

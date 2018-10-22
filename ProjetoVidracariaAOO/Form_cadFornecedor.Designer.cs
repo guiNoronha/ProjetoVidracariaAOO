@@ -31,7 +31,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblCadClie = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnVoltar = new System.Windows.Forms.PictureBox();
             this.btnCriar = new System.Windows.Forms.Button();
             this.lblNomeForn = new System.Windows.Forms.Label();
             this.txtNomeForn = new System.Windows.Forms.TextBox();
@@ -49,6 +48,8 @@
             this.lblEmailForn = new System.Windows.Forms.Label();
             this.txtCnpjForn = new System.Windows.Forms.TextBox();
             this.lblCnpj = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.PictureBox();
+            this.btnListarForn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).BeginInit();
@@ -77,6 +78,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.btnListarForn);
             this.panel1.Controls.Add(this.btnCriar);
             this.panel1.Controls.Add(this.btnVoltar);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -84,16 +86,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(624, 61);
             this.panel1.TabIndex = 3;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
-            this.btnVoltar.Location = new System.Drawing.Point(15, 14);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
-            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnVoltar.TabIndex = 3;
-            this.btnVoltar.TabStop = false;
             // 
             // btnCriar
             // 
@@ -105,6 +97,7 @@
             this.btnCriar.TabIndex = 4;
             this.btnCriar.Text = "Criar";
             this.btnCriar.UseVisualStyleBackColor = true;
+            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // lblNomeForn
             // 
@@ -254,6 +247,28 @@
             this.lblCnpj.TabIndex = 29;
             this.lblCnpj.Text = "CNPJ";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
+            this.btnVoltar.Location = new System.Drawing.Point(15, 14);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
+            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnVoltar.TabIndex = 3;
+            this.btnVoltar.TabStop = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // btnListarForn
+            // 
+            this.btnListarForn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarForn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnListarForn.Location = new System.Drawing.Point(269, 12);
+            this.btnListarForn.Name = "btnListarForn";
+            this.btnListarForn.Size = new System.Drawing.Size(87, 36);
+            this.btnListarForn.TabIndex = 5;
+            this.btnListarForn.Text = "Listar";
+            this.btnListarForn.UseVisualStyleBackColor = true;
+            // 
             // Form_cadFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -314,5 +329,6 @@
         private System.Windows.Forms.Label lblEmailForn;
         private System.Windows.Forms.TextBox txtCnpjForn;
         private System.Windows.Forms.Label lblCnpj;
+        private System.Windows.Forms.Button btnListarForn;
     }
 }

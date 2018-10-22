@@ -41,5 +41,27 @@ namespace ProjetoVidracariaAOO
         {
 
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCriar_Click(object sender, EventArgs e)
+        {
+            if (txtNomeForn.Text.Equals("") || txtCnpjForn.Text.Equals("") || txtTelForn.Text.Equals("") ||
+                txtCepForn.Text.Equals("") || txtBairroForn.Text.Equals("") || txtRuaForn.Text.Equals("") ||
+                txtNroForn.Text.Equals("") || txtEmailForn.Text.Equals(""))
+            {
+                MessageBox.Show("Todos os campos precisam estar preenchidos!", "ERRO",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Fornecedor cadastrado com sucesso!", "Concluido",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
+        }
     }
 }
