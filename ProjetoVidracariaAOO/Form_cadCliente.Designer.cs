@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnListarCli = new System.Windows.Forms.Button();
             this.btnCriar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblCadClie = new System.Windows.Forms.Label();
             this.txtNomeCli = new System.Windows.Forms.TextBox();
@@ -48,11 +50,9 @@
             this.lblNroCli = new System.Windows.Forms.Label();
             this.txtNroCli = new System.Windows.Forms.TextBox();
             this.txtEmailCli = new System.Windows.Forms.TextBox();
-            this.btnVoltar = new System.Windows.Forms.PictureBox();
-            this.btnListarCli = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,6 +67,18 @@
             this.panel1.Size = new System.Drawing.Size(623, 61);
             this.panel1.TabIndex = 0;
             // 
+            // btnListarCli
+            // 
+            this.btnListarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarCli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnListarCli.Location = new System.Drawing.Point(268, 12);
+            this.btnListarCli.Name = "btnListarCli";
+            this.btnListarCli.Size = new System.Drawing.Size(87, 36);
+            this.btnListarCli.TabIndex = 4;
+            this.btnListarCli.Text = "Listar";
+            this.btnListarCli.UseVisualStyleBackColor = true;
+            this.btnListarCli.Click += new System.EventHandler(this.btnListarCli_Click);
+            // 
             // btnCriar
             // 
             this.btnCriar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,6 +90,17 @@
             this.btnCriar.Text = "Criar";
             this.btnCriar.UseVisualStyleBackColor = true;
             this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
+            this.btnVoltar.Location = new System.Drawing.Point(12, 15);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
+            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnVoltar.TabIndex = 2;
+            this.btnVoltar.TabStop = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // panel2
             // 
@@ -245,28 +268,6 @@
             this.txtEmailCli.Size = new System.Drawing.Size(396, 26);
             this.txtEmailCli.TabIndex = 22;
             // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
-            this.btnVoltar.Location = new System.Drawing.Point(12, 15);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
-            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnVoltar.TabIndex = 2;
-            this.btnVoltar.TabStop = false;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // btnListarCli
-            // 
-            this.btnListarCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarCli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnListarCli.Location = new System.Drawing.Point(268, 12);
-            this.btnListarCli.Name = "btnListarCli";
-            this.btnListarCli.Size = new System.Drawing.Size(87, 36);
-            this.btnListarCli.TabIndex = 4;
-            this.btnListarCli.Text = "Listar";
-            this.btnListarCli.UseVisualStyleBackColor = true;
-            // 
             // Form_cadCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,9 +296,9 @@
             this.Name = "Form_cadCliente";
             this.Text = "Form_cadCliente";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

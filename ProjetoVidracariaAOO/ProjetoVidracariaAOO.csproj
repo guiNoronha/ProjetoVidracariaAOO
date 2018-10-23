@@ -58,6 +58,24 @@
     <Compile Include="Form_cadFornecedor.Designer.cs">
       <DependentUpon>Form_cadFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_CadVisita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CadVisita.Designer.cs">
+      <DependentUpon>Form_CadVisita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_listClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_listClientes.Designer.cs">
+      <DependentUpon>Form_listClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_listVisitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_listVisitas.Designer.cs">
+      <DependentUpon>Form_listVisitas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +95,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_cadFornecedor.resx">
       <DependentUpon>Form_cadFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CadVisita.resx">
+      <DependentUpon>Form_CadVisita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_listClientes.resx">
+      <DependentUpon>Form_listClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_listVisitas.resx">
+      <DependentUpon>Form_listVisitas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_login.resx">
       <DependentUpon>Form_login.cs</DependentUpon>

@@ -48,5 +48,12 @@ namespace ProjetoVidracariaAOO
                 this.Close();
             }
         }
+
+        private void btnListarCli_Click(object sender, EventArgs e)
+        {
+            Form_listClientes listClients = new Form_listClientes();
+            listClients.StartPosition = FormStartPosition.CenterParent;
+            listClients.ShowDialog(this);
+        }
     }
 }

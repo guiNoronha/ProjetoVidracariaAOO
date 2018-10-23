@@ -19,7 +19,9 @@ namespace ProjetoVidracariaAOO
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form_listVisitas visitas = new Form_listVisitas();
+            visitas.StartPosition = FormStartPosition.CenterParent;
+            visitas.ShowDialog(this);
         }
 
         private void btnSair_Click(object sender, EventArgs e)
