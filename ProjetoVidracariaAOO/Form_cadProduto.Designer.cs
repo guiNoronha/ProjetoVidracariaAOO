@@ -1,6 +1,6 @@
 ﻿namespace ProjetoVidracariaAOO
 {
-    partial class Form_Produto
+    partial class Form_cadProduto
     {
         /// <summary>
         /// Required designer variable.
@@ -182,6 +182,7 @@
             this.btnListarProd.TabIndex = 4;
             this.btnListarProd.Text = "Listar";
             this.btnListarProd.UseVisualStyleBackColor = true;
+            this.btnListarProd.Click += new System.EventHandler(this.btnListarProd_Click);
             // 
             // btnCriarProd
             // 
@@ -193,6 +194,7 @@
             this.btnCriarProd.TabIndex = 3;
             this.btnCriarProd.Text = "Criar";
             this.btnCriarProd.UseVisualStyleBackColor = true;
+            this.btnCriarProd.Click += new System.EventHandler(this.btnCriarProd_Click);
             // 
             // btnVoltar
             // 
@@ -203,8 +205,9 @@
             this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnVoltar.TabIndex = 2;
             this.btnVoltar.TabStop = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // Form_Produto
+            // Form_cadProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +225,7 @@
             this.Controls.Add(this.lblNomeProduto);
             this.Controls.Add(this.txtNomeProd);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form_Produto";
+            this.Name = "Form_cadProduto";
             this.Text = "Form_Produto";
             this.Load += new System.EventHandler(this.Form_Produto_Load);
             this.panel2.ResumeLayout(false);

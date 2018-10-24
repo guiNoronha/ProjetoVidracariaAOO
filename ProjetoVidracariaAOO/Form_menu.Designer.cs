@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSair = new System.Windows.Forms.PictureBox();
+            this.btnFunc = new System.Windows.Forms.PictureBox();
             this.lblMenu = new System.Windows.Forms.Label();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnVisitas = new System.Windows.Forms.Button();
             this.btnFornecedor = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
             this.btnPedidos = new System.Windows.Forms.Button();
-            this.btnSair = new System.Windows.Forms.PictureBox();
-            this.btnFunc = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFunc)).BeginInit();
@@ -52,6 +52,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(632, 99);
             this.panel1.TabIndex = 0;
+            // 
+            // btnSair
+            // 
+            this.btnSair.Image = global::ProjetoVidracariaAOO.Properties.Resources.logout2;
+            this.btnSair.Location = new System.Drawing.Point(12, 31);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(45, 46);
+            this.btnSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSair.TabIndex = 3;
+            this.btnSair.TabStop = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // btnFunc
+            // 
+            this.btnFunc.Image = global::ProjetoVidracariaAOO.Properties.Resources.user;
+            this.btnFunc.Location = new System.Drawing.Point(551, 21);
+            this.btnFunc.Name = "btnFunc";
+            this.btnFunc.Size = new System.Drawing.Size(69, 56);
+            this.btnFunc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnFunc.TabIndex = 2;
+            this.btnFunc.TabStop = false;
             // 
             // lblMenu
             // 
@@ -113,6 +134,7 @@
             this.btnProdutos.TabIndex = 4;
             this.btnProdutos.Text = "Produtos";
             this.btnProdutos.UseVisualStyleBackColor = false;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // btnPedidos
             // 
@@ -125,27 +147,7 @@
             this.btnPedidos.TabIndex = 5;
             this.btnPedidos.Text = "Pedidos";
             this.btnPedidos.UseVisualStyleBackColor = false;
-            // 
-            // btnSair
-            // 
-            this.btnSair.Image = global::ProjetoVidracariaAOO.Properties.Resources.logout2;
-            this.btnSair.Location = new System.Drawing.Point(12, 31);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(45, 46);
-            this.btnSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnSair.TabIndex = 3;
-            this.btnSair.TabStop = false;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // btnFunc
-            // 
-            this.btnFunc.Image = global::ProjetoVidracariaAOO.Properties.Resources.user;
-            this.btnFunc.Location = new System.Drawing.Point(551, 21);
-            this.btnFunc.Name = "btnFunc";
-            this.btnFunc.Size = new System.Drawing.Size(69, 56);
-            this.btnFunc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnFunc.TabIndex = 2;
-            this.btnFunc.TabStop = false;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
             // 
             // Form_menu
             // 

@@ -58,6 +58,12 @@
     <Compile Include="Form_cadFornecedor.Designer.cs">
       <DependentUpon>Form_cadFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_cadPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_cadPedido.Designer.cs">
+      <DependentUpon>Form_cadPedido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_CadVisita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="Form_listClientes.Designer.cs">
       <DependentUpon>Form_listClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_listProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_listProduto.Designer.cs">
+      <DependentUpon>Form_listProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_listVisitas.cs">
       <SubType>Form</SubType>
@@ -88,11 +100,11 @@
     <Compile Include="Form_menu.Designer.cs">
       <DependentUpon>Form_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Produto.cs">
+    <Compile Include="Form_cadProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Produto.Designer.cs">
-      <DependentUpon>Form_Produto.cs</DependentUpon>
+    <Compile Include="Form_cadProduto.Designer.cs">
+      <DependentUpon>Form_cadProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,11 +114,17 @@
     <EmbeddedResource Include="Form_cadFornecedor.resx">
       <DependentUpon>Form_cadFornecedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_cadPedido.resx">
+      <DependentUpon>Form_cadPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_CadVisita.resx">
       <DependentUpon>Form_CadVisita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_listClientes.resx">
       <DependentUpon>Form_listClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_listProduto.resx">
+      <DependentUpon>Form_listProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_listVisitas.resx">
       <DependentUpon>Form_listVisitas.cs</DependentUpon>
@@ -117,8 +135,8 @@
     <EmbeddedResource Include="Form_menu.resx">
       <DependentUpon>Form_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Produto.resx">
-      <DependentUpon>Form_Produto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_cadProduto.resx">
+      <DependentUpon>Form_cadProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

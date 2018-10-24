@@ -45,5 +45,19 @@ namespace ProjetoVidracariaAOO
             form.StartPosition = FormStartPosition.CenterParent;
             form.ShowDialog(this);
         }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            Form_cadProduto form = new Form_cadProduto();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+        }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            Form_cadPedido form = new Form_cadPedido();
+            form.StartPosition = FormStartPosition.CenterParent;
+            form.ShowDialog(this);
+        }
     }
 }

@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjetoVidracariaAOO
 {
-    public partial class Form_Produto : Form
+    public partial class Form_cadPedido : Form
     {
-        public Form_Produto()
+        public Form_cadPedido()
         {
             InitializeComponent();
         }
 
-        private void Form_Produto_Load(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblCadClie_Click(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

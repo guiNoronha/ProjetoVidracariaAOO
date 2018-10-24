@@ -31,20 +31,21 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblListVisita = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView_Visitas = new System.Windows.Forms.DataGridView();
-            this.btn_novaVisita = new System.Windows.Forms.Button();
+            this.btn_VerConcluidas = new System.Windows.Forms.Button();
             this.btn_Alterar = new System.Windows.Forms.Button();
+            this.btn_novaVisita = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.PictureBox();
+            this.dataGridView_Visitas = new System.Windows.Forms.DataGridView();
             this.cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consultor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.PictureBox();
+            this.btn_GerarOrcamento = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Visitas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Visitas)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -70,7 +71,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(49)))), ((int)(((byte)(66)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_GerarOrcamento);
+            this.panel1.Controls.Add(this.btn_VerConcluidas);
             this.panel1.Controls.Add(this.btn_Alterar);
             this.panel1.Controls.Add(this.btn_novaVisita);
             this.panel1.Controls.Add(this.btnVoltar);
@@ -80,6 +82,51 @@
             this.panel1.Size = new System.Drawing.Size(623, 61);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btn_VerConcluidas
+            // 
+            this.btn_VerConcluidas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_VerConcluidas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_VerConcluidas.Location = new System.Drawing.Point(215, 12);
+            this.btn_VerConcluidas.Name = "btn_VerConcluidas";
+            this.btn_VerConcluidas.Size = new System.Drawing.Size(127, 36);
+            this.btn_VerConcluidas.TabIndex = 6;
+            this.btn_VerConcluidas.Text = "Ver Concluidas";
+            this.btn_VerConcluidas.UseVisualStyleBackColor = true;
+            // 
+            // btn_Alterar
+            // 
+            this.btn_Alterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Alterar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_Alterar.Location = new System.Drawing.Point(348, 12);
+            this.btn_Alterar.Name = "btn_Alterar";
+            this.btn_Alterar.Size = new System.Drawing.Size(127, 36);
+            this.btn_Alterar.TabIndex = 5;
+            this.btn_Alterar.Text = "Alterar";
+            this.btn_Alterar.UseVisualStyleBackColor = true;
+            // 
+            // btn_novaVisita
+            // 
+            this.btn_novaVisita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btn_novaVisita.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_novaVisita.Location = new System.Drawing.Point(481, 12);
+            this.btn_novaVisita.Name = "btn_novaVisita";
+            this.btn_novaVisita.Size = new System.Drawing.Size(127, 36);
+            this.btn_novaVisita.TabIndex = 4;
+            this.btn_novaVisita.Text = "Nova Visita";
+            this.btn_novaVisita.UseVisualStyleBackColor = true;
+            this.btn_novaVisita.Click += new System.EventHandler(this.btn_novaVisita_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
+            this.btnVoltar.Location = new System.Drawing.Point(12, 15);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
+            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnVoltar.TabIndex = 3;
+            this.btnVoltar.TabStop = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // dataGridView_Visitas
             // 
@@ -98,29 +145,6 @@
             this.dataGridView_Visitas.RowHeadersVisible = false;
             this.dataGridView_Visitas.Size = new System.Drawing.Size(620, 258);
             this.dataGridView_Visitas.TabIndex = 4;
-            // 
-            // btn_novaVisita
-            // 
-            this.btn_novaVisita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btn_novaVisita.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_novaVisita.Location = new System.Drawing.Point(481, 12);
-            this.btn_novaVisita.Name = "btn_novaVisita";
-            this.btn_novaVisita.Size = new System.Drawing.Size(127, 36);
-            this.btn_novaVisita.TabIndex = 4;
-            this.btn_novaVisita.Text = "Nova Visita";
-            this.btn_novaVisita.UseVisualStyleBackColor = true;
-            this.btn_novaVisita.Click += new System.EventHandler(this.btn_novaVisita_Click);
-            // 
-            // btn_Alterar
-            // 
-            this.btn_Alterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Alterar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_Alterar.Location = new System.Drawing.Point(348, 12);
-            this.btn_Alterar.Name = "btn_Alterar";
-            this.btn_Alterar.Size = new System.Drawing.Size(127, 36);
-            this.btn_Alterar.TabIndex = 5;
-            this.btn_Alterar.Text = "Alterar";
-            this.btn_Alterar.UseVisualStyleBackColor = true;
             // 
             // cliente
             // 
@@ -159,27 +183,17 @@
             this.status.Name = "status";
             this.status.Width = 43;
             // 
-            // button1
+            // btn_GerarOrcamento
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(215, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 36);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Ver Concluidas";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Image = global::ProjetoVidracariaAOO.Properties.Resources.back;
-            this.btnVoltar.Location = new System.Drawing.Point(12, 15);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(35, 33);
-            this.btnVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnVoltar.TabIndex = 3;
-            this.btnVoltar.TabStop = false;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            this.btn_GerarOrcamento.Enabled = false;
+            this.btn_GerarOrcamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_GerarOrcamento.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_GerarOrcamento.Location = new System.Drawing.Point(82, 12);
+            this.btn_GerarOrcamento.Name = "btn_GerarOrcamento";
+            this.btn_GerarOrcamento.Size = new System.Drawing.Size(127, 36);
+            this.btn_GerarOrcamento.TabIndex = 7;
+            this.btn_GerarOrcamento.Text = "Orçamento";
+            this.btn_GerarOrcamento.UseVisualStyleBackColor = true;
             // 
             // Form_listVisitas
             // 
@@ -196,8 +210,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Visitas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnVoltar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Visitas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,11 +225,12 @@
         private System.Windows.Forms.DataGridView dataGridView_Visitas;
         private System.Windows.Forms.Button btn_novaVisita;
         private System.Windows.Forms.Button btn_Alterar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_VerConcluidas;
         private System.Windows.Forms.DataGridViewTextBoxColumn cliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn endereco;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn consultor;
         private System.Windows.Forms.DataGridViewCheckBoxColumn status;
+        private System.Windows.Forms.Button btn_GerarOrcamento;
     }
 }
